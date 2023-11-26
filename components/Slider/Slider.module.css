@@ -1,0 +1,122 @@
+.sliderContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .sliderWrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .arrowButton {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    padding: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .arrowButton:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+  }
+  
+  .arrowButton:first-child {
+    left: 10px;
+  }
+  
+  .arrowButton:last-child {
+    right: 10px;
+  }
+  
+  .imgContainer {
+    max-width: 100vw;
+    height: 100vh;
+  }
+  
+  .slideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text {
+    z-index: 100;
+    color: #fff;
+    font-weight: 1000;
+    font-size: 4.5rem;
+    max-width: 20%;
+  
+    transition: all 1s ease;
+    line-height: 4.5rem;
+    transition: all 1s ease;
+  
+  }
+  
+  
+  
+  .shop {
+    color: #000;
+    background-color: #fff;
+    font-size: .85rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  margin-top: 1rem;
+    transition: all 1s ease;
+  
+  
+  }
+  
+  .textContainer {
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    transition: all 1s ease;
+  }
+  
+  .textContainer.active {
+    top: 30%;
+  }
+  
+  @media screen and (max-width:768px) {
+    .text {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+  
+    .shop {
+      width: 7rem;
+      padding: 0.8rem 0.3rem;
+      margin-top: 0.5rem;
+    }
+  }

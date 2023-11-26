@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #E1C300;
+    text-align: center;
+}
+.content{
+    width: 100%;
+    color: #212122;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+}
